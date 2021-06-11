@@ -1,0 +1,57 @@
+nav {
+	position: absolute;
+	z-index: 1000;
+	width: 100%;
+	height: 100px;
+	top: 50%;
+    vertical-align: middle;
+}
+
+.vertslider-left_nav, .vertslider-right_nav {
+	height: 100px;
+	width: 56px;
+}
+
+.vertslider-left_nav {
+	float: left;
+	background-image:url(../img/mainimg_icon-left.png); 
+	background-size: contain;
+    cursor: pointer
+}
+
+.vertslider-right_nav {
+	float: right;
+	background-image:url(../img/mainimg_icon-right.png);
+	background-size: contain;
+    cursor: pointer
+}
+
+.vertslider-pager {
+	position: absolute;
+	z-index: 1000;
+	width: 100%;
+	height: 50px;
+	bottom: 0px;
+}
+
+.vertslider-pager > .vertslider-pager-inner-wrapper {
+	width: 150px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.vertslider-pager > .vertslider-pager-inner-wrapper > a {
+	margin-left: 10px;
+	margin-right: 10px;
+	color: #fff;
+    font-size: 1.8rem;
+    text-decoration: none
+}
+
+.vertslider-pager > .vertslider-pager-inner-wrapper > a.vertslider-pager-link.active {
+	color: #fff; font-size: 3.0rem
+}
+
+.vertslider-page-wrapper.first-page.active ~ div.vertslider-left_nav {
+    display: none;
+}
